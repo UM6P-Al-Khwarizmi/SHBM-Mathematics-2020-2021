@@ -46,7 +46,7 @@ SHBM 2020 Fall Semester - Business Basics Courses - Mathematics
 
 ## Online material
 
-A github project is available for students and will contain all the used material in this lecture, including Jupyter Notebooks.
+A [github project](https://github.com/UM6P/SHBM-Mathematics-2020-2021) is available for students and will contain all the used material in this lecture, including Jupyter Notebooks.
 
 ## Instructor
 
