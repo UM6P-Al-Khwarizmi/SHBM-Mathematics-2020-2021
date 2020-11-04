@@ -1,0 +1,29 @@
+digraph{
+
+# Graph style
+"ordering"="out"
+"rankdir"="TD"
+
+#########
+# Nodes #
+#########
+
+"Add(Pow(Symbol(x), Integer(2)), Mul(Symbol(x), Symbol(y)))_()" ["color"="black", "label"="Add", "shape"="ellipse"];
+"Pow(Symbol(x), Integer(2))_(0,)" ["color"="black", "label"="Pow", "shape"="ellipse"];
+"Symbol(x)_(0, 0)" ["color"="black", "label"="x", "shape"="ellipse"];
+"Integer(2)_(0, 1)" ["color"="black", "label"="2", "shape"="ellipse"];
+"Mul(Symbol(x), Symbol(y))_(1,)" ["color"="black", "label"="Mul", "shape"="ellipse"];
+"Symbol(x)_(1, 0)" ["color"="black", "label"="x", "shape"="ellipse"];
+"Symbol(y)_(1, 1)" ["color"="black", "label"="y", "shape"="ellipse"];
+
+#########
+# Edges #
+#########
+
+"Add(Pow(Symbol(x), Integer(2)), Mul(Symbol(x), Symbol(y)))_()" -> "Pow(Symbol(x), Integer(2))_(0,)";
+"Add(Pow(Symbol(x), Integer(2)), Mul(Symbol(x), Symbol(y)))_()" -> "Mul(Symbol(x), Symbol(y))_(1,)";
+"Pow(Symbol(x), Integer(2))_(0,)" -> "Symbol(x)_(0, 0)";
+"Pow(Symbol(x), Integer(2))_(0,)" -> "Integer(2)_(0, 1)";
+"Mul(Symbol(x), Symbol(y))_(1,)" -> "Symbol(x)_(1, 0)";
+"Mul(Symbol(x), Symbol(y))_(1,)" -> "Symbol(y)_(1, 1)";
+}
